@@ -1,9 +1,7 @@
 name: AWS Credentials Setup
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   setup-aws-creds:
