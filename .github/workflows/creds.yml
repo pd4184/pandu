@@ -13,6 +13,6 @@ jobs:
       - name: Configure AWS Credentials
         uses: pd4184/custom-action@main
         with:
-          aws-access-key-id: 'access_key_id'
-          aws-secret-access-key: 'access_secret_key'
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: 'us-west-2'
